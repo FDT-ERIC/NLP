@@ -12,7 +12,7 @@ class CONF:
     min_count = 60  # 过滤低频字
     size = 125  # 词向量的纬度
     topn = 14  # 概率最大的 n 个词
-    model_path = '01_poem_word2vec.model' # 词向量模型
+    model_path = 'Word2Vec_Gensim.model' # 词向量模型
 
 
 # 诗词生成模型
