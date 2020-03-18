@@ -45,13 +45,13 @@ class Vocabulary(object):
 
 # 训练数据
 data = [['你 很 聪明 。', 'you are very wise .'],
-            ['我们 一起 打 游戏 。', 'let us play game together .'],
-            ['你 太 刻薄 了 。', 'you are so mean .'],
-            ['你 完全 正确 。', 'you are perfectly right .'],
-            ['我 坚决 反对 妥协 。', 'i am strongly opposed to a compromise .'],
-            ['他们 正在 看 电影 。', 'they are watching a movie .'],
-            ['他 正在 看着 你 。', 'he is looking at you .'],
-            ['我 怀疑 他 是否 会 来 。', 'i am doubtful whether he will come .']]
+        ['我们 一起 打 游戏 。', 'let us play game together .'],
+        ['你 太 刻薄 了 。', 'you are so mean .'],
+        ['你 完全 正确 。', 'you are perfectly right .'],
+        ['我 坚决 反对 妥协 。', 'i am strongly opposed to a compromise .'],
+        ['他们 正在 看 电影 。', 'they are watching a movie .'],
+        ['他 正在 看着 你 。', 'he is looking at you .'],
+        ['我 怀疑 他 是否 会 来 。', 'i am doubtful whether he will come .']]
 
 
 # language1, 输入的语言
