@@ -123,12 +123,12 @@ class Embedding(nn.Module):
         return self.norm(embedding)
 
 
-# ？？？ 唔系好明
+# 普通的 Q, K, V 操作, 唔系好明, attn_mask 的作用是什么
 class ScaledDotProductAttention(nn.Module):
     def __init__(self):
         super(ScaledDotProductAttention, self).__init__()
 
-    # Q, K, V 操作
+    # Q, K, V 操作, attn_mask 的作用是什么, 不太懂
     def forward(self, Q, K, V, attn_mask):
         # scores : [batch_size x n_heads x len_q(=len_k) x len_k(=len_q)]
         scores = torch.matmul(Q, K.transpose(-1, -2)) / np.sqrt(d_k)
