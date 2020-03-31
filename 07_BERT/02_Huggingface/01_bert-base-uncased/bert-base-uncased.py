@@ -2,7 +2,7 @@ import torch
 from transformers import BertTokenizer, BertForMaskedLM
 
 # token
-tokenizer = BertTokenizer.from_pretrained('../../../Data/07_BERT/Huggingface/01_bert-base-uncased/vocab.txt')
+tokenizer = BertTokenizer.from_pretrained('../../../Data/07_BERT/02_Huggingface/01_bert-base-uncased/vocab.txt')
 text = "[CLS] Who was Jim Henson ? [SEP] Jim Henson was an engineer [SEP]"
 tokenized_text = tokenizer.tokenize(text)
 
@@ -21,7 +21,7 @@ tokens_tensor = torch.tensor([indexed_tokens])
 segments_tensors = torch.tensor([segments_ids])
 
 # 加载预训练模型 (weights)
-model = BertForMaskedLM.from_pretrained('../../../Data/07_BERT/Huggingface/01_bert-base-uncased')
+model = BertForMaskedLM.from_pretrained('../../../Data/07_BERT/02_Huggingface/01_bert-base-uncased')
 model.eval()
 
 # 吧数据扔到模型里
