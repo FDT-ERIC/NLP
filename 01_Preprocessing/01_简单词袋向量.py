@@ -23,7 +23,7 @@ print(X)
 【tf】: 文档 d 中 w 的词频
        然而 scikit-learn 中采用 CountVectorizer 计数的形式
 【idf】: log(N:语料库中的文档总数 / N(w):词语 w 出现在多少个文档中 +1)
-        scikit-learn 中有两种: smooth: log((N+1) / (N(w)+1)); non-smooth: log((N) / (N(w)+1))
+        scikit-learn 中有两种: smooth: 1 + log((N+1) / (N(w)+1)); non-smooth: log((N) / (N(w)+1))
 '''
 '''
 输出:
