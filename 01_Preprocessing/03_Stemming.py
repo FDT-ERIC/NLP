@@ -10,4 +10,4 @@ text = ['caresses', 'flies', 'dies', 'meeting', 'stating', 'dating']
 
 singles = [stemmer.stem(word) for word in text]
 
-print(' '.join(singles))
+print(singles)
